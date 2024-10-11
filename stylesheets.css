@@ -1,0 +1,420 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+
+.body-index{
+  height: 1200px;
+  background-image: url(img/fondo.jpg);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+  padding-bottom: 3em;
+  min-height: 100vh;
+}
+
+.body-normal{
+    height: 1200px; 
+    background-image: url(img/fondo-prueba80.jpg);
+    background-attachment:fixed;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+ 
+  }
+
+
+body .titulo-centrado{
+  vertical-align: middle;
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-style: italic;
+
+}
+
+.titulo_principal, .titulo_formulario{
+padding: 20px 20px;
+display: flex;
+justify-content: center;
+text-align: center;
+}
+
+.titulo_principal h1{
+
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 45px;
+  padding-left: 10px; 
+  padding-top: 15px;
+}
+
+.titulo_principal img:hover{
+
+  transform: scale(1.05);
+  transition: 0,8s ease;
+}
+
+h2{
+
+  color: white;
+  font-size: 25px;
+  padding: 10px 30px; 
+
+}
+
+nav {
+  max-width: 1000px; /* Ancho máximo de la barra de navegación */
+  margin: auto;
+  background-color: rgba(0, 0, 0, .5);
+  font-size: 18px;
+  margin-top: 20px;
+  list-style: none;
+  border-radius: 0.5rem; /* Más espacio en la parte superior de la barra de navegación */
+}
+
+
+.nav-horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-horizontal li {
+  margin-bottom: 2px; /* Voy a poner más espacio entre elementos de la barra de navegación */
+}
+
+.nav-horizontal li a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  
+}
+.nav-horizontal a:hover{
+  
+   background-color: rgb(169, 166, 166, 0.1);
+   border-radius: 2px;
+   transition: background-color 0.6s ease;
+   transform: scale(1.03);
+  
+  }
+.nav-vertical{
+
+  list-style: none;
+}
+
+.section h1{
+  float: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+
+
+/* Voy a agregar estilos específicos para la sección-media */
+
+.seccion-media {
+  padding: 50px 25px;
+  display: grid;
+  grid-template-columns: auto;
+ /* Ajusta el relleno según sea necesario */
+}
+
+.seccion-media img, .formulario, .fieldset_form{
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto 20px; 
+}
+
+.seccion-media img{
+  border-radius: 2rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Voy a poner estilos para mejorar la legibilidad del texto */
+.seccion-media p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: white; 
+  text-align: justify;
+  margin: 20px;
+  
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse; /* Elimino el espacio entre las celdas */
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 200px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Estilo de los encabezados de la tabla */
+.custom-table thead tr {
+  background-color: rgba(69, 65, 65, 0.8);
+  color: #ffffff;
+  text-align: left;
+}
+
+/* Estilo de las celdas de la tabla */
+.custom-table th,
+.custom-table td {
+  padding: 12px 15px;
+}
+
+.custom-table tbody tr {
+  border-bottom: 1px solid rgba(69, 65, 65, 0.8) ;
+}
+
+.custom-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.custom-table tbody tr:last-of-type {
+  border-bottom: 2px solid rgba(69, 65, 65, 0.8);
+}
+
+/* Estilo para el hover sobre las filas */
+.custom-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.formulario{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+/* Estilo para el botón */
+.form-button {
+  text-align: center;
+  margin-top: 20px; 
+}
+
+/* Estilo para el botón */
+.form-button {
+ width:100%;
+  background-color: rgb(169, 166, 166, 0.8);
+  color: white; 
+  padding: 15px 32px; 
+  border: #f1f1f1;
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 18px; 
+  transition: background-color 0.3s, transform 0.2s;
+  /* Efectos de transición */
+}
+
+.form-button:hover {
+  
+  background-color: #4e5050; 
+  transform: scale(1.01); 
+  cursor: pointer;
+}
+
+
+.fieldset_form{
+  width: 650px;
+  background-color: rgb(169, 166, 166, 0.8);
+}
+
+.footer-normal img:hover{
+
+  transform: scale(1.1);
+  transition: 0,8s ease;
+}
+
+.footer-index img:hover{
+
+  transform: scale(1.1);
+  transition: 0,8s ease;
+
+}
+
+.footer-index{
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 1em 0;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-normal {
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 1em 0;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: auto;
+}
+
+.footer-index h4 {
+  padding-left: 20px;
+}
+
+.footer-index p {
+  padding-left: 20px;
+}
+
+
+.imagenes_albaicin, .imagenes_ayuntamiento, .imagenes_andalucia {
+  display: inline;
+  float: left;
+  padding: 15px 15px 15px 15px;
+
+}
+
+.creative-commons {
+  display: flex;
+  justify-content: right;
+  padding-right: 20px;
+}
+
+.creative-commons img {
+  padding-left: 10px;
+  width: 100px;
+}
+
+.creative-commons h4{
+
+  font-size: 14px;
+}
+
+a:hover{
+  button{
+    opacity:0.5;
+  }
+  button:hover{
+    opacity:1;
+  }
+}
+
+
+/* Estilos para hacer la sección responsive */
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 0.5em 0;
+  }
+  
+  body{
+    height: auto;
+    width: auto;
+  }
+
+  .titulo_principal {
+    text-align: center;
+  }
+
+  .titulo_principal h1 {
+    margin: 10px 0;
+  }
+
+  .barra_navegacion {
+    margin-top: 5px;
+
+  }
+
+  .nav-horizontal {
+    flex-direction: column;
+  }
+
+  .nav-horizontal li {
+    margin-bottom: 10px;
+  }
+
+  .nav-vertical {
+    position: static;
+    display: block;
+    background-color: transparent;
+    text-align: left;
+  }
+
+  .seccion-media {
+    padding: 30px 10px; 
+  }
+
+  .seccion-media img {
+    margin-bottom: 15px; 
+  }
+
+  .seccion-media p {
+    font-size: 14px; 
+  }
+
+  .imagen_1, .imagen_2, .imagen_3, .imagen_4{
+    width: auto;
+    height: 300px;
+    padding: 5px 5px 5px 5px;
+  }
+
+  .imagen_360, .imagen_plano{
+
+  display: flex;
+  width: 95%;
+  height: auto;
+  
+   }
+
+  .imagenes_albaicin, .imagenes_ayuntamiento, .imagenes_andalucia{
+
+  display: inline-block;
+  width: 100px;
+  padding: 5px 5px 5px 5px;
+  float: none;
+  }
+  .tabla-general {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+
+   }  
+
+  .formulario{
+ 
+  width: 290px;
+  height: auto;
+   }
+
+  .fieldset_form{
+  width: 305px;
+  height: auto;
+
+   }
+  h4{
+  font-size: 15px;
+  }
+
+   .textarea_form{ 
+
+  width: 280px;
+
+   }
+
+   label{
+
+  font-size:medium;
+  }
+}
